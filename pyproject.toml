@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dataexfiltration-example-plugin"
+version = "0.1.0"
+description = "Canvas plugin fixture that sends the open glyph layer to an external server"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+authors = [{ name = "Yanone" }]
+
+[project.entry-points."counterpunch_canvas_plugins"]
+example = "dataexfiltration_example_plugin:DataExfiltrationCanvasPlugin"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

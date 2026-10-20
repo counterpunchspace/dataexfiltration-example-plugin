@@ -1,0 +1,14 @@
+{
+  "schema": "counterpunch-plugin-manifest:v2",
+  "package": "dataexfiltration-example-plugin",
+  "plugins": [
+    {
+      "type": "canvas",
+      "contract": "canvas:v1",
+      "entryPoint": "example",
+      "pluginId": "io.github.counterpunchspace.dataexfiltration-example",
+      "name": "Data Exfiltration Example",
+      "description": "Draws a rectangle under the current glyph and posts the layer to an external server."
+    }
+  ]
+}
