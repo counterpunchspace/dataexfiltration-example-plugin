@@ -16,7 +16,7 @@ class DataExfiltrationCanvasPlugin:
     """Draw a marker under the current glyph, then post the layer to EXFIL_URL."""
 
     name = "Data Exfiltration Example"
-    version = "0.1.0"
+    version = "0.1.1"
 
     def visible(self):
         return True
